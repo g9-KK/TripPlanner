@@ -14,7 +14,7 @@ Use Docker compose to set up Trip Planner.
 docker-compose build
 ```
 
-Note: If you use a proxy under the network, please export the environment variable $http_proxy as your proxy or directly specify it in docker-compose.yml.
+Note: If you use a proxy under the network, please set the environment variable $http_proxy as your proxy.
 
 
 ### Start Up
