@@ -29,6 +29,8 @@ docker-compose up
 
 Use the following POST and GET requests to get the shortest driving distance for travelling all specified locations.
 
+Trip Planner service is available on http://localhost:8111.
+
 - [POST `/route`: Submit start point and drop-off locations](#submit-start-point-and-drop-off-locations)
 - [GET `/route/<TOKEN>`: Get shortest driving route](#get-shortest-driving-route)
 
