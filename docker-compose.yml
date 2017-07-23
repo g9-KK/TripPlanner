@@ -1,0 +1,12 @@
+version: '2'
+services:
+    tripPlanner:
+        image: trip-planner:latest
+        build:
+            context: .
+            args:
+                http_proxy: $http_proxy
+        ports: ['8111:8111']
+        environment:
+            - http_proxy=${http_proxy}
+        container_name: tripPlanner

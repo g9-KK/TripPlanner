@@ -1,0 +1,1 @@
+Trip Planner is a micro application for assisting users to plan the trip to the destination.

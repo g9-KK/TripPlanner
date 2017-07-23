@@ -1,0 +1,7 @@
+node_modules
+npm-debug.log
+merged.yml
+
+/src/**/*.js.map
+/src/**/*.js
+!/src/app_configs.js

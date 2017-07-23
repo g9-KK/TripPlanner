@@ -1,0 +1,41 @@
+{
+    "version": "0.1.0",
+    "command": "node",
+    "isShellCommand": true,
+    "args": [
+        "./node_modules/gulp/bin/gulp.js", "--no-color"
+    ],
+    "tasks": [{
+            "taskName": "build:server:watch",
+            "isBuildCommand": true,
+            "problemMatcher": "$tsc"
+        },
+        {
+            "taskName": "build:test",
+            "isTestCommand": true,
+            "problemMatcher": "$tsc"
+        },
+        {
+            "taskName": "less",
+            "problemMatcher": "$lessCompile"
+        },
+        {
+            "taskName": "test",
+            "args": [],
+            "isTestCommand": true
+        },
+        {
+            "taskName": "buildTests",
+            "problemMatcher": "$tsc"
+        },
+        {
+            "taskName": "buildAll",
+            "problemMatcher": ["$tsc", "$lessCompile"]
+        },
+        {
+            "taskName": "watch",
+            "problemMatcher": ["$tsc", "$lessCompile"]
+        }
+
+    ]
+}
