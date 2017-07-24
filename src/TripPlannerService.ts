@@ -17,12 +17,12 @@ export default class TripPlannerService {
     return (new Promise<string>((resolve, reject) => {
 
       // Request body is empty
-      if (!body || !body.path) 
+      if (!body) 
         return reject("Request body is empty.");
       
       let locations:Array<Array<string>>;
       try {
-        locations = JSON.parse(body.path);
+        locations = JSON.parse(body);
       }catch (err){
         return reject("Error in parsing request body\n"+ err);
       }
