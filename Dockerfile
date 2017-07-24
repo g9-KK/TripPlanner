@@ -10,7 +10,6 @@ ADD package.json /usr/src/app
 RUN npm config set proxy $http_proxy && \
     npm config set https-proxy $http_proxy && \
     npm config set progress false && \
-    npm install npm@latest -g && \
     cd /usr/src/app && npm install --no-optional
 
 COPY . /usr/src/app
