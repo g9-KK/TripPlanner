@@ -20,9 +20,12 @@ export default class TripPlannerService {
       if (!body) 
         return reject("Request body is empty.");
       
+      if (!body.path) 
+        return reject("Path is empty.");
+      
       let locations:Array<Array<string>>;
       try {
-        locations = JSON.parse(body);
+        locations = JSON.parse(body.path);
       }catch (err){
         return reject("Error in parsing request body\n"+ err);
       }
