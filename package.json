@@ -2,13 +2,8 @@
   "name": "trip-planner",
   "version": "1.0.0",
   "private": true,
-  "repository": {
-    "url": "https://git.sami.int.thomsonreuters.com/lvc/lvc-event",
-    "type": "git"
-  },
   "scripts": {
     "start": "node ./src/www.js",
-    "test": "node ./node_modules/gulp/bin/gulp.js build:test && mocha --timeout 10000 \"spec/unitTest**/*.spec.js\"",
     "start:debug": "node ./node_modules/nodemon/bin/nodemon.js --debug=5862 ./src/www.js",
     "build": "node ./node_modules/gulp/bin/gulp.js build",
     "version": "echo $npm_package_version"
