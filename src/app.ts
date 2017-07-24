@@ -18,7 +18,7 @@ app.get('/health', function (req, res) {
 });
 
 app.use(new MorganWrapper("TripPlanner").logger);
-// app.use(bodyParser.json({}));
+app.use(bodyParser.json({}));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 
