@@ -46,11 +46,11 @@ Input body:
 
 ```json
 {
-	"path":		[
-				["ROUTE_START_LATITUDE", "ROUTE_START_LONGITUDE"],
-				["DROPOFF_LATITUDE_#1", "DROPOFF_LONGITUDE_#1"],
+	"path":		"[
+				['ROUTE_START_LATITUDE', 'ROUTE_START_LONGITUDE'],
+				['DROPOFF_LATITUDE_#1', 'DROPOFF_LONGITUDE_#1'],
 				...
-			]
+			]"
 }
 ```
 
@@ -73,11 +73,11 @@ Input body example:
 
 ```json
 {
-	"path":		[
-				["22.372081", "114.107877"],
-				["22.284419", "114.159510"],
-				["22.326442", "114.167811"]
-			]
+	"path":		"[
+				['22.372081', '114.107877'],
+				['22.284419', '114.159510'],
+				['22.326442', '114.167811']
+			]"
 }
 ```
 
