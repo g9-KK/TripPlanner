@@ -20,6 +20,8 @@ export default class TripPlannerService {
       if (!body) 
         return reject("Request body is empty.");
       
+      console.log("body: \n"+ JSON.stringify(body));
+      
       if (!body.path) 
         return reject("Path is empty.");
       
